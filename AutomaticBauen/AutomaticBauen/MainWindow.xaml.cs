@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace AutomaticBauen
 {
@@ -29,12 +30,15 @@ namespace AutomaticBauen
         public MainWindow()
         {
             InitializeComponent();
-            comboboxinhalt.Add("neues Projekt");
-            comboboxinhalt.Add("Testordner");
+            Projektordner.Items.Add("neues Projekt");
+            //comboboxinhalt.Add("neues Projekt");
+            //comboboxinhalt.Add("Testordner");
 
             //Alle Projekte einlesen und in die Combobox hinzufügen
 
-            Projektordner.ItemsSource = comboboxinhalt;
+            //Projektordner.ItemsSource = comboboxinhalt;
+
+           
         }
 
         private void Button_Flaechenberechnung(object sender, RoutedEventArgs e)
@@ -97,12 +101,25 @@ namespace AutomaticBauen
 
         private void ErstellenButton_Click(object sender, RoutedEventArgs e)
         {
-            //Überprüfen ob so ein Name schon vergeben ist
+            string full_path = projektspeicher + "\\" + "Bauvorhaben_" + TextboxProjektName.Text;
+            if (Directory.Exists(full_path) == true)
+            {
+                //Überprüfen ob so ein Name schon vergeben ist
+                Label_Projektauswahl.Content = "Name schon vergeben!";
+
+            }
+            else
+            {
+                comboboxinhalt.Add(TextboxProjektName.Text);
+                Projektordner.Items.Add(TextboxProjektName.Text);
+                Directory.CreateDirectory(full_path);
+
+            }
+
+
+
             //Ordner erstellen und die dazu gehörigen Klassen ertstellen
             //alle Klassen mit den richtigen Speicher Laden
-
-            comboboxinhalt.Add(TextboxProjektName.Text);
-            
         }
     }
 }
