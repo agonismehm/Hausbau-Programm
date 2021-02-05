@@ -24,7 +24,7 @@ namespace AutomaticBauen
         public Flaechenberechnung()
         {
             InitializeComponent();
-
+            //Was neues
             comboboxinhalt.Add("25cm Mauern");
             comboboxinhalt.Add("12cm Mauern");
             Mauernarten.SelectedIndex = 0;
@@ -37,7 +37,7 @@ namespace AutomaticBauen
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_NeuerBereich(object sender, RoutedEventArgs e)
         {
 
         }
