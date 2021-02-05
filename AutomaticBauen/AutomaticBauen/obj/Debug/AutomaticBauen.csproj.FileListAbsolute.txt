@@ -1,0 +1,17 @@
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\bin\Debug\AutomaticBauen.exe.config
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\bin\Debug\AutomaticBauen.exe
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\bin\Debug\AutomaticBauen.pdb
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\MainWindow.g.cs
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\Flaechenberechnung.g.cs
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\App.g.cs
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen_MarkupCompile.cache
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen_MarkupCompile.lref
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\MainWindow.baml
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\Flaechenberechnung.baml
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.g.resources
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.Properties.Resources.resources
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.csproj.GenerateResource.cache
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.csproj.CoreCompileInputs.cache
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.exe
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.pdb
+C:\Users\agoni\source\repos\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.csprojAssemblyReference.cache
