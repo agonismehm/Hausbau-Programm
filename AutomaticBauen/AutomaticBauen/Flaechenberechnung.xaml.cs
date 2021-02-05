@@ -19,17 +19,12 @@ namespace AutomaticBauen
     /// </summary>
     public partial class Flaechenberechnung : Window
     {
-        List<string> comboboxinhalt = new List<string>();
+        List<string> combobox_bereiche = new List<string>();
 
         public Flaechenberechnung()
         {
             InitializeComponent();
-            //Was neues
-            comboboxinhalt.Add("25cm Mauern");
-            comboboxinhalt.Add("12cm Mauern");
-            Mauernarten.SelectedIndex = 0;
 
-            Mauernarten.ItemsSource = comboboxinhalt;
         }
 
         private void Button_Click_Berechnungfertigstellen(object sender, RoutedEventArgs e)
@@ -39,6 +34,8 @@ namespace AutomaticBauen
 
         private void Button_Click_NeuerBereich(object sender, RoutedEventArgs e)
         {
+            combobox_bereiche.Add("Fisch");
+
 
         }
     }

@@ -17,6 +17,33 @@ namespace AutomaticBauen.Klassen
             name = projektname;
         }
 
+        public bool AddBereich(string newbereichname)
+        {
+            bool ret = false;
+            bool bereichname_alreadyexist= false;
+            
+            foreach(var i in bereiche)
+            {
+                if(i.Name == newbereichname)
+                {
+                    bereichname_alreadyexist = true;
+                }
+            }
+
+            if(bereichname_alreadyexist == true)
+            {
+                ret = false;
+            }
+            else
+            {
+                Bereich newbereich = new Bereich(newbereichname);
+                bereiche.Add(newbereich);
+                ret = true;
+            }
+
+            return ret;
+        }
+
         public bool Load(string pfad)
         {
             bool ret = false;

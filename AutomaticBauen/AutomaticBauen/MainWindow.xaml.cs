@@ -25,18 +25,17 @@ namespace AutomaticBauen
 
         List<string> comboboxinhalt = new List<string>();
         const string projektspeicher = @"C:\Users\agoni\Documents\Firma Alush\BedarfsRechner";
-        Projekt projektdata;
+        Projekt projektdata = new Projekt("Unbenannt");
 
         public MainWindow()
         {
             InitializeComponent();
             Projektordner.Items.Add("neues Projekt");
-            //comboboxinhalt.Add("neues Projekt");
-            //comboboxinhalt.Add("Testordner");
 
-            //Alle Projekte einlesen und in die Combobox hinzufügen
-
-            //Projektordner.ItemsSource = comboboxinhalt;
+            foreach(var i in Directory.EnumerateDirectories(projektspeicher))
+            {
+                Projektordner.Items.Add(i.Substring(projektspeicher.Length + 1));
+            }
 
            
         }

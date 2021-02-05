@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="Flaechenberechnung" Height="422.369" Width="830.823">
     <Grid Margin="0,0,-4,2">
-        <Button Content="Fläche hinzufügen" HorizontalAlignment="Left" Margin="20,129,0,0" VerticalAlignment="Top" Width="251" Height="37"/>
-        <Button Content="Fenster-Fläche entfernen" HorizontalAlignment="Left" Margin="20,213,0,0" VerticalAlignment="Top" Width="251" Height="37" RenderTransformOrigin="1.262,0.412"/>
-        <Button Content="Berechnung-Fertigstellen" HorizontalAlignment="Left" Margin="20,287,0,0" VerticalAlignment="Top" Width="251" Height="37" Click="Button_Click_Berechnungfertigstellen"/>
-        <Button Content="Türe-Fläche entfernen" HorizontalAlignment="Left" Margin="20,171,0,0" VerticalAlignment="Top" Width="251" Height="37"/>
-        <ComboBox x:Name="Mauernarten" HorizontalAlignment="Left" VerticalAlignment="Top" Width="251" Margin="20,71,0,0" Height="32"/>
-        <ListView HorizontalAlignment="Left" Height="372" Margin="293,10,0,-104" VerticalAlignment="Top" Width="509">
+        <Button Content="Fläche hinzufügen" HorizontalAlignment="Left" Margin="20,63,0,0" VerticalAlignment="Top" Width="138" Height="37"/>
+        <Button Content="Fenster-Fläche entfernen" HorizontalAlignment="Left" Margin="20,147,0,0" VerticalAlignment="Top" Width="138" Height="37" RenderTransformOrigin="1.262,0.412"/>
+        <Button Content="Berechnung-Fertigstellen" HorizontalAlignment="Left" Margin="534,347,0,0" VerticalAlignment="Top" Width="251" Height="37" Click="Button_Click_Berechnungfertigstellen"/>
+        <Button Content="Türe-Fläche entfernen" HorizontalAlignment="Left" Margin="20,105,0,0" VerticalAlignment="Top" Width="138" Height="37"/>
+        <ComboBox x:Name="Mauernarten" HorizontalAlignment="Left" VerticalAlignment="Top" Width="341" Margin="20,10,0,0" Height="37"/>
+        <ListView HorizontalAlignment="Left" Height="243" Margin="171,63,0,0" VerticalAlignment="Top" Width="614">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Neuer Bereich" HorizontalAlignment="Left" Margin="20,29,0,0" VerticalAlignment="Top" Width="251" Height="37" Click="Button_Bereicherstellen"/>
+        <Button Content="Neuer Bereich" HorizontalAlignment="Left" Margin="411,10,0,0" VerticalAlignment="Top" Width="374" Height="37" Click="Button_Click_NeuerBereich"/>
 
     </Grid>
 </Window>
