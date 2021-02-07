@@ -74,10 +74,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Neue Flaeche.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Flaechenberechnung.xaml.cs">
       <DependentUpon>Flaechenberechnung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Neue Flaeche.xaml.cs">
+      <DependentUpon>Neue Flaeche.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

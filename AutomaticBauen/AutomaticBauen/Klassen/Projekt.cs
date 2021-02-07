@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AutomaticBauen.Klassen
 {
-    class Projekt
+    public class Projekt
     {
         private string name;
-        List<Bereich> bereiche = new List<Bereich>();
+        public ObservableCollection<Bereich> bereiche = new ObservableCollection<Bereich>();
         
 
         public Projekt(string projektname)
@@ -23,6 +24,7 @@ namespace AutomaticBauen.Klassen
             bool bereichname_alreadyexist= false;
             
             foreach(var i in bereiche)
+           
             {
                 if(i.Name == newbereichname)
                 {

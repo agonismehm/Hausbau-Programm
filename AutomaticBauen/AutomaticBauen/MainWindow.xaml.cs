@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace AutomaticBauen
 {
@@ -25,7 +26,7 @@ namespace AutomaticBauen
 
         List<string> comboboxinhalt = new List<string>();
         const string projektspeicher = @"C:\Users\agoni\Documents\Firma Alush\BedarfsRechner";
-        Projekt projektdata = new Projekt("Unbenannt");
+        public Projekt projektdata = new Projekt("Unbenannt");
 
         public MainWindow()
         {
@@ -46,7 +47,7 @@ namespace AutomaticBauen
             if(Projektordner.SelectedIndex != 0)
             {
                 //Erstellen bzw. Laden des Projektes
-                Flaechenberechnung windowflaechenberechnung = new Flaechenberechnung();
+                Flaechenberechnung windowflaechenberechnung = new Flaechenberechnung(projektdata);
                 windowflaechenberechnung.ShowDialog();
             }
             else

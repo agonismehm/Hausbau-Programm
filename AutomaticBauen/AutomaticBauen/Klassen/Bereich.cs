@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace AutomaticBauen.Klassen
     public class Bereich
     {
         private string name;
-        private List<Flaeche> listflaechen = new List<Flaeche>();
+        public ObservableCollection<Flaeche> listflaechen = new ObservableCollection<Flaeche>();
         public string Name{ get { return name; } }
 
         public Bereich(string bereichname)
