@@ -21,30 +21,24 @@ namespace AutomaticBauen.Klassen
     {
         private string name;
         private int flaeche;
-        Flaechenart flaechentyp;
+        private Flaechenart flaechentyp;
         private int seite1;
         private int seite2;
 
-        public Flaeche(string newname, Flaechenart flaechenart)
-        {
-            name = newname;
-            flaechentyp = flaechenart;
-        }
+        public Flaechenart Flaechentyp { get { return flaechentyp; } set { flaechentyp = value; } }
 
-        public Flaechenart Flaechentyp { get { return flaechentyp; } }
-
-        public string Name{ get { return name; } }
+        public string Name{ get { return name; } set { name = value; } }
 
         public int Seite1 { get { return seite1;} set { seite1 = value; } }
 
         public int Seite2 { get { return seite2; } set { seite2 = value; } }
 
-        public int Ergebnis {
+        public float Ergebnis {
             get
             {
                 if (seite1 != 0 && seite2 != 0)
                 {
-                    return flaeche = seite1 * seite2 / 100;
+                    return flaeche = seite1 * seite2 / 10000;
                 }
                 else
                 {

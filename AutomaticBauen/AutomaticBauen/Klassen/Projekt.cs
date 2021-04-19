@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace AutomaticBauen.Klassen
 {
@@ -11,34 +13,23 @@ namespace AutomaticBauen.Klassen
     {
         private string name;
         public ObservableCollection<Bereich> bereiche = new ObservableCollection<Bereich>();
-        
 
-        public Projekt(string projektname)
-        {
-            name = projektname;
-        }
+        public string Name { get { return name; } set { name = value; } }
 
         public bool AddBereich(string newbereichname)
         {
             bool ret = false;
-            bool bereichname_alreadyexist= false;
-            
-            foreach(var i in bereiche)
-           
-            {
-                if(i.Name == newbereichname)
-                {
-                    bereichname_alreadyexist = true;
-                }
-            }
 
-            if(bereichname_alreadyexist == true)
+            var item = bereiche.FirstOrDefault(x => x.Name == newbereichname);
+
+            if (item != null)
             {
                 ret = false;
             }
             else
             {
-                Bereich newbereich = new Bereich(newbereichname);
+                Bereich newbereich = new Bereich();
+                newbereich.Name = newbereichname;
                 bereiche.Add(newbereich);
                 ret = true;
             }
@@ -50,16 +41,12 @@ namespace AutomaticBauen.Klassen
         {
             bool ret = false;
 
-            return ret;
-        }
-
-        public bool Save(string pfad)
-        {
-            bool ret = false;
-
+            
 
             return ret;
         }
+
+        
 
     }
 }

@@ -1,17 +1,7 @@
-﻿using System;
+﻿using AutomaticBauen.Klassen;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using AutomaticBauen.Klassen;
 
 namespace AutomaticBauen
 {
@@ -20,6 +10,7 @@ namespace AutomaticBauen
     /// </summary>
     public partial class Flaechenberechnung : Window
     {
+        const string projektspeicher = @"C:\Users\agoni\Documents\Firma Alush\BedarfsRechner";
         List<string> combobox_bereiche = new List<string>();
         Projekt projektdata;
 
@@ -54,8 +45,8 @@ namespace AutomaticBauen
             string newbereichsname = Textbox_Bereichsname.Text;
 
             retvalue = projektdata.AddBereich(newbereichsname);
-            
-            if(retvalue == true)
+
+            if (retvalue == true)
             {
                 label_fehlermeldung_neuerBereich.Content = "Bereich mit dem Namen " + Textbox_Bereichsname.Text + " konnte erfolgreich hinzugefügt";
                 label_fehlermeldung_neuerBereich.Visibility = Visibility.Visible;
@@ -77,7 +68,7 @@ namespace AutomaticBauen
 
         private void ListBoxselectioneventhandler_Flaechenauswahl(object sender, SelectionChangedEventArgs e)
         {
-           
+            button_flaechenentfernen.IsEnabled = true;
         }
 
         private void Button_Click_Flaechehinzufuegen(object sender, RoutedEventArgs e)
@@ -95,6 +86,16 @@ namespace AutomaticBauen
                 //fehler
             }
             
+        }
+
+        private void Button_Click_Flaecheentfernen(object sender, RoutedEventArgs e)
+        {
+            projektdata.bereiche[Combobox_Bereiche.SelectedIndex].listflaechen.Remove(ListBox_AnzeigeFlaechen.SelectedItem as Flaeche);
+        }
+
+        private void Button_Click_Flaechebearbeiten(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 

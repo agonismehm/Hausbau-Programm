@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutomaticBauen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="303.605" Width="558.11">
+        Title="MainWindow" Height="369.579" Width="558.11"
+        Closing="MainWindow_closing">
     <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,0,1">
         <Grid.RenderTransform>
             <TransformGroup>
@@ -16,13 +17,14 @@
             </TransformGroup>
         </Grid.RenderTransform>
         <Button x:Name="ButtonFlaechenberechnung" Content="Flächenberechnung" HorizontalAlignment="Left" VerticalAlignment="Top" Width="502" Margin="26,134,0,0" Height="58" Click="Button_Flaechenberechnung" IsEnabled="False"/>
-        <Button Content="Bedarfsberechnung" IsEnabled="True" HorizontalAlignment="Left" Width="502" Margin="26,203,0,13" Click="Button_Flaechenberechnung"/>
+        <Button Content="Bedarfsberechnung" IsEnabled="True" HorizontalAlignment="Left" Width="502" Margin="26,203,0,79" Click="Button_Flaechenberechnung"/>
         <ComboBox x:Name="Projektordner"  SelectionChanged="comboxselectioneventhandler" HorizontalAlignment="Left" VerticalAlignment="Top" Width="502" Margin="25,29,0,0" Height="32"/>
         <Label Content="Bitte Ordner des Projekts auswählen oder &quot;neuesProjekt&quot; auswählen :" HorizontalAlignment="Left" Margin="26,3,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="TextboxProjektName" HorizontalAlignment="Left" Height="23" Margin="26,85,0,0" TextWrapping="Wrap" Text="Name des neuen Bauvorhabens eintippen" VerticalAlignment="Top" Width="378" IsEnabled="False"/>
         <Button x:Name="ErstellenButton" Content="Erstellen" HorizontalAlignment="Left" Margin="409,85,0,0" VerticalAlignment="Top" Width="119" Height="23" IsEnabled="False" Click="ErstellenButton_Click"/>
-        <Label x:Name="Label_Projektauswahl" Content="Label" HorizontalAlignment="Left" Margin="26,61,0,0" VerticalAlignment="Top" Width="218"/>
-        <Label x:Name="Label_ErstellenProjektordner" Content="Label" HorizontalAlignment="Left" Margin="26,108,0,0" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="Label_Projektauswahl" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="26,61,0,0" VerticalAlignment="Top" Width="218"/>
+        <Label x:Name="Label_ErstellenProjektordner" Content="Label" HorizontalAlignment="Left" Margin="28,108,0,0" VerticalAlignment="Top" Width="182"/>
+        <Button Content="Bedarfsberechnung" IsEnabled="True" HorizontalAlignment="Left" Width="502" Margin="26,203,0,79" Click="Button_Flaechenberechnung"/>
 
     </Grid>
 </Window>

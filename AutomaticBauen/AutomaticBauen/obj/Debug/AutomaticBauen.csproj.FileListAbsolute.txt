@@ -31,6 +31,6 @@ C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\Automat
 C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.Properties.Resources.resources
 C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.csproj.GenerateResource.cache
 C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.csproj.CoreCompileInputs.cache
-C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.csprojAssemblyReference.cache
 C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\AutomaticBauen\obj\Debug\Neue Flaeche.g.cs
 C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\AutomaticBauen\obj\Debug\Neue Flaeche.baml
+C:\Users\agoni\Documents\Projekte\Hausbau-Rechner\Hausbau\AutomaticBauen\AutomaticBauen\obj\Debug\AutomaticBauen.csprojAssemblyReference.cache

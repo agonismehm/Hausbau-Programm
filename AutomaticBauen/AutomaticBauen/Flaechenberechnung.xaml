@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Flaechenberechnung" Height="533.369" Width="830.823">
     <Grid Margin="0,0,-4,2">
-        <Button Content="Fläche hinzufügen" HorizontalAlignment="Left" Margin="20,135,0,0" VerticalAlignment="Top" Width="138" Height="37" Click="Button_Click_Flaechehinzufuegen"/>
-        <Button Content="Fenster-Fläche entfernen" HorizontalAlignment="Left" Margin="20,219,0,0" VerticalAlignment="Top" Width="138" Height="37" RenderTransformOrigin="1.262,0.412"/>
+        <Button Content="Fläche hinzufügen" HorizontalAlignment="Left" Margin="20,162,0,0" VerticalAlignment="Top" Width="138" Height="37" Click="Button_Click_Flaechehinzufuegen"/>
+        <Button Content="Fenster-Fläche entfernen" HorizontalAlignment="Left" Margin="20,340,0,0" VerticalAlignment="Top" Width="138" Height="37" RenderTransformOrigin="1.262,0.412"/>
         <Button Content="Berechnung-Fertigstellen" HorizontalAlignment="Left" Margin="534,442,0,0" VerticalAlignment="Top" Width="251" Height="37" Click="Button_Click_Berechnungfertigstellen"/>
-        <Button Content="Türe-Fläche entfernen" HorizontalAlignment="Left" Margin="20,177,0,0" VerticalAlignment="Top" Width="138" Height="37"/>
+        <Button Content="Türe-Fläche entfernen" HorizontalAlignment="Left" Margin="20,298,0,0" VerticalAlignment="Top" Width="138" Height="37"/>
         <ComboBox x:Name="Combobox_Bereiche" SelectionChanged="comboxselectioneventhandler_bereichauswahl" HorizontalAlignment="Left" VerticalAlignment="Top" Width="341" Margin="20,54,0,0" Height="37" RenderTransformOrigin="0.519,-0.513">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -19,7 +19,7 @@
             </ComboBox.ItemTemplate>
         </ComboBox>
 
-        <Grid Margin="171,125,42,347" Background="LightGray" >
+        <Grid Margin="171,125,45,353" Background="LightGray" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="90"/>
@@ -64,6 +64,8 @@
         <Label Content="Name des neuen Bereichs:" HorizontalAlignment="Left" Margin="407,24,0,0" VerticalAlignment="Top" Height="24" Width="264"/>
         <Label Content="Bereich auswählen:" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Height="24" Width="264" RenderTransformOrigin="0.523,-0.81"/>
         <Label x:Name="label_fehlermeldung_neuerBereich" Content="Fehler: " HorizontalAlignment="Left" Margin="407,96,0,0" VerticalAlignment="Top" Height="24" Width="264" Visibility="Hidden"/>
+        <Button x:Name="button_flaechenentfernen" Content="Fläche entfernen" HorizontalAlignment="Left" Margin="20,246,0,0" VerticalAlignment="Top" Width="138" Height="37" IsEnabled="False" Click="Button_Click_Flaecheentfernen"/>
+        <Button x:Name="buttom_flaechebearbeiten" Content="Fläche bearbeiten" HorizontalAlignment="Left" Margin="20,204,0,0" VerticalAlignment="Top" Width="138" Height="37" IsEnabled="False" Click="Button_Click_Flaechebearbeiten"/>
 
     </Grid>
 </Window>

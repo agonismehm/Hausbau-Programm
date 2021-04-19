@@ -46,7 +46,9 @@ namespace AutomaticBauen
 
                 if (Combobox_Flaechenarten.SelectedIndex != -1)
                 {
-                    newFlaeche = new Flaeche(eingegebenerName, (Flaechenart)Combobox_Flaechenarten.SelectedIndex);
+                    newFlaeche = new Flaeche();
+                    newFlaeche.Name = eingegebenerName;
+                    newFlaeche.Flaechentyp = (Flaechenart)Combobox_Flaechenarten.SelectedIndex;
                     newFlaeche.Seite1 = Convert.ToInt32(Textbox_Seite1.Text);
                     newFlaeche.Seite2 = Convert.ToInt32(Textbox_Seite2.Text);
                     tempbereich.AddNewFlaeche(newFlaeche);

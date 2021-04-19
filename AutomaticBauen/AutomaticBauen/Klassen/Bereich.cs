@@ -11,12 +11,7 @@ namespace AutomaticBauen.Klassen
     {
         private string name;
         public ObservableCollection<Flaeche> listflaechen = new ObservableCollection<Flaeche>();
-        public string Name{ get { return name; } }
-
-        public Bereich(string bereichname)
-        {
-            name = bereichname;
-        }
+        public string Name{ get { return name; } set { name = value; } }
 
         public bool Rename(string newname)
         {
